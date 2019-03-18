@@ -45,25 +45,34 @@
 			var position;
 			var points;
 			var speed;
+			var direction;
 
 
 
 			position = 0;
 			points = 0;
 			speed = 10;
+			direction = 1;
 
 			box.css('left', position);
 			box.text(points);
 			var update = function() {
 				// TODO 3 / 6 / 7 / 8
-				position = position + speed;
+				position = position + (speed * direction);
 				console.log("new position:" + position);
 				box.css('left', position);
 			};
+			if(position > boardWidth) {
+				direction = -1;
+			}
 			
 
 
 			var handleBoxClick = function() {
+				points = points + 1;
+				box.text(points);
+				position = 0;
+				speed = speed + 3;
 				// TODO 4 / 5
 
 			};
