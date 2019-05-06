@@ -61,14 +61,16 @@
 				position = position + (speed * direction);
 				console.log("new position:" + position);
 				box.css('left', position);
-			};
-			if(position > boardWidth) {
+				
+					if(position > boardWidth) {
 				direction = -1;
 				
 			}
 			if(position < 0){
 					direction = 1
 				}
+			};
+		
 			
 
 

@@ -13,4 +13,8 @@ canvas {
     -webkit-user-select: none;
     -ms-user-select: none;
     position:absolute;
+    
+ background-image: url("https://wp-assets.futurism.com/2019/01/hubble-image-triangulum-galaxy-768x403.jpg") !important;
+ /*background-color: #cccccc;*/
+
 }
