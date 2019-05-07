@@ -64,7 +64,7 @@ var background = function(window) {
                 building.y = groundY - buildingHeight;
                 background.addChild(building);
                 buildings.push(building);
-                console.log(buildings)
+               // console.log(buildings)
             }
 
             // TODO 4: Part 1 - Add a tree
